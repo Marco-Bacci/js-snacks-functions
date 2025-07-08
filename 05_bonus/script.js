@@ -9,10 +9,24 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-
-
+function sayHello(name){
+  // dichiaro costanti per capire che ora è
+  const now = new Date()
+  const hour = now.getHours()
+ if(hour<=13){
+  console.log(`buongiorno ${name} !`)
+}
+else if(hour>13 && hour<=17){
+  console.log(`buon pomeriggio ${name} !`)
+  
+ }
+ else {
+  console.log(`buonasera ${name} !`)
+ }
+}
 // Invoca la funzione qui e stampa il risultato in console
 
+sayHello(name)
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
