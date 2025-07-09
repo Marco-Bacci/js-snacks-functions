@@ -6,14 +6,14 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 function lettersAndWords (array , letter){
-  // dichiaro la variabile dell'array contenente parole con stessa lettera e la variabile della lettera
+  // dichiaro la variabile dell'array contenente parole con stessa lettera 
   const finalArray=[]
   
   for (let i = 0; i<array.length; i++){
     if(array[i].charAt(0) === letter.toUpperCase()){
       finalArray.push(array[i])
     }
-    
+    // SI POTEVA ANCHE FARE ---> if (array[i][0]) === letter.toUpperCase()
   }
   
   return finalArray
