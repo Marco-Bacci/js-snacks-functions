@@ -10,7 +10,7 @@ function lettersAndWords (array , letter){
   const finalArray=[]
   
   for (let i = 0; i<array.length; i++){
-    if(array[i].charAt(0) === letter.toUpperCase()){
+    if(array[i].charAt(0).toLowerCase() === letter.toLowerCase()){
       finalArray.push(array[i])
     }
     // SI POTEVA ANCHE FARE ---> if (array[i][0]) === letter.toUpperCase()
